@@ -1,0 +1,12 @@
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
+      <config xmlns:xfa="http://www.xfa.org/schema/xci/1.0/" xmlns="http://www.xfa.org/schema/xci/1.0/">
+        <present> 
+          <pdf>
+           <renderPolicy>server</renderPolicy>
+          </pdf>
+          <script>
+        <runScripts>client</runScripts>
+      </script>
+        </present>
+      </config>
+    </xdp:xdp>

@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xfa generator="Designer_V6.5.23.20250516.1.177" APIVersion="3.6.25132.0"?>
+<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2026-03-03T14:42:56Z" uuid="33cb1a49-2d19-443c-a8cd-531e0a4b77d7">
+<template xmlns="http://www.xfa.org/schema/xfa-template/3.6/">
+   <?formServer defaultPDFRenderFormat acrobat11.0dynamic?>
+   <subform name="form1" layout="tb" locale="en_US" restoreState="auto">
+      <pageSet>
+         <pageArea name="Page1" id="Page1">
+            <contentArea x="0.25in" y="0.25in" w="576pt" h="756pt"/>
+            <medium stock="default" short="612pt" long="792pt"/>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform w="576pt" h="756pt">
+         <draw name="Text3" y="12.7mm" x="25.4mm" w="45.037mm" h="5.2331mm">
+            <ui>
+               <textEdit/>
+            </ui>
+            <value>
+               <text>This is text outside of subform</text>
+            </value>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            <?renderCache.bounds 124830 12000 0 0 1417 1417 0 0?>
+            <?renderCache.textRun 31 This is text outside of subform 0 1417 8917 0 0 0 "Myriad Pro" 0 0 10000 ISO-8859-1?></draw>
+         <field name="TextField2" y="22.225mm" x="22.225mm" w="136.525mm" h="9mm">
+            <ui>
+               <textEdit>
+                  <border>
+                     <edge stroke="lowered"/>
+                  </border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <caption reserve="25mm">
+               <para vAlign="middle"/>
+               <value>
+                  <text>Text Field </text>
+               </value>
+            </caption>
+            <bind match="none"/>
+            <value>
+               <text>outside of subform</text>
+            </value>
+         </field>
+		 
+         <field name="CheckBox2" y="41.275mm" x="28.575mm" w="28mm" h="6mm">
+            <ui>
+               <checkButton>
+                  <border>
+                     <edge stroke="lowered"/>
+                     <fill/>
+                  </border>
+               </checkButton>
+            </ui>
+            <font typeface="Myriad Pro"/>
+            <margin leftInset="1mm" rightInset="1mm"/>
+            <para vAlign="middle"/>
+            <value>
+               <integer>0</integer>
+            </value>
+            <caption placement="right" reserve="21mm">
+               <para vAlign="middle"/>
+               <value>
+                  <text>Check Box</text>
+               </value>
+            </caption>
+            <items>
+               <integer>1</integer>
+               <integer>0</integer>
+               <integer>2</integer>
+            </items>
+            <bind match="none"/>
+            <event activity="change" name="event__change">
+               <script contentType="application/x-javascript">
+
+if(this.rawValue == 1){
+
+	subform1.presence = "visible";
+	} 	 else  {
+	subform1.presence = "hidden";
+}
+</script>
+            </event>
+         </field>
+         <?templateDesigner expand 1?>
+         <subform layout="tb" name="sub_textRiskbedomning" w="182.879mm" x="9.525mm" y="180.975mm" presence="hidden">
+            <draw h="6.36mm" locale="sv_SE" w="7.199958in" name="txt_textBlock2">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="tab-interval:0.5in;tab-stops:left 0.333in left 0.667in left 1in left 1.333in left 1.667in left 2in left 2.333in left 2.667in left 3in left 3.333in left 3.667in left 4in left 4.333in left 4.667in left 5in left 5.333in left 5.667in left 6in left 6.333in left 6.667in left 7in left 7.333in left 7.667in left 8in left 8.333in left 8.667in left 9in left 9.333in left 9.667in left 10in left 10.333in;letter-spacing:0in">Vi önskar ta del av journalkopior</p></body>
+                  </exData>
+               </value>
+               <font weight="bold" baselineShift="0pt" typeface="Arial" size="12pt"/>
+               <margin rightInset="0mm" bottomInset="0.2mm" topInset="1mm" leftInset="1mm"/>
+               <para marginRight="0pt" marginLeft="0pt" textIndent="0pt" spaceBelow="0pt" spaceAbove="0.75pt"/>
+            </draw>
+            <field minH="21.2mm" w="182.879mm" name="txt_text">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Times New Roman" size="11pt"/>
+               <margin topInset="1mm" rightInset="1mm" leftInset="1mm" bottomInset="0.1mm"/>
+               <validate scriptTest="warning"/>
+               <border>
+                  <edge presence="hidden" thickness="0.1764mm"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+               <assist>
+                  <speak disable="1"/>
+               </assist>
+               <traversal>
+                  <traverse ref="txt_textBlock2[1]"/>
+               </traversal>
+               <para lineHeight="11pt" spaceBelow="6pt"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="margin-bottom:0pt">Ovan nämnda person har behandlats hos er för bland annat FRITEXT.</p><p style="margin-bottom:0pt"><br/></p><p style="margin-bottom:0pt">Kunden söker nu försäkring hos oss. Med anledning av det behöver vi ta del av fullständig journalkopia för tiden DD MÅNAD ÅÅÅÅ till DD MÅNAD ÅÅÅÅ inklusive eventuella lablistor, remisser/remissvar, röntgenutlåtanden och andra undersökningsresultat.</p></body>
+                  </exData>
+               </value>
+			   <bind match="none"/>
+               <keep intact="contentArea"/>
+            </field>
+            <?templateDesigner expand 0?>
+            <field access="readOnly" presence="hidden" id="floatingField020042" h="9mm" w="62mm" x="0mm" y="0mm" name="flw_olycksfall">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Myriad Pro"/>
+               <margin rightInset="1mm" leftInset="1mm" bottomInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="global"/>
+               <event name="event__initialize" activity="initialize">
+                  <script contentType="application/x-javascript">
+
+this.rawValue = frm_innehall.frag_konstanter.flt_RiskbdeomningTel.rawValue;
+</script>
+               </event>
+            </field>
+            <draw h="44.521mm" locale="sv_SE" w="7.199958in" name="txt_textBlock2">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in">Den sökande har skriftligen gett oss tillåtelse att ta del av upplysningar om tidigare och nuvarande hälsotillstånd.<br/>Vi skickar med kopia av medgivandet i det här brevet.</p><p style="letter-spacing:0in">Vi behöver få ett svar från er så snart som möjligt, eftersom vi är beroende av ert svar för att kunna bedöma kundens försäkringsansökan. Använd gärna svarskuvertet som följer med detta brev.</p><p style="letter-spacing:0in">Fakturan måste, utöver bifogad information om fakturakrav, innehålla betalnings-ID i form av personnummer eller försäkringsnummer. Vi har ingen möjlighet att lösa ut försändelser mot postförskott.<span style="xfa-spacerun:yes"> </span></p><p style="letter-spacing:0in">Om ni har några frågor är ni välkomna att kontakta oss på telefon<span style="xfa-spacerun:yes"> </span><span xfa:embedType="uri" xfa:embedMode="raw" xfa:embed="#floatingField020042"/>.</p></body>
+                  </exData>
+               </value>
+               <font baselineShift="0pt" typeface="Times New Roman" size="11pt"/>
+               <margin rightInset="1mm" bottomInset="0.2mm" topInset="1mm" leftInset="1mm"/>
+               <para lineHeight="11pt" marginRight="0pt" marginLeft="0pt" textIndent="0pt" spaceBelow="6pt" spaceAbove="6pt"/>
+            </draw>
+         </subform>
+         <subform name="Subform1" x="9.525mm" y="127mm" w="182.88mm" h="50mm">
+            <subform layout="tb" name="sub_block1" w="182.88mm" y="19.05mm">
+               <border>
+                  <edge thickness="0.1mm" presence="hidden"/>
+                  <corner thickness="0.1mm" presence="hidden"/>
+               </border>
+               <subform layout="lr-tb" name="sub_block1FyllI" w="182.88mm">
+                  <draw w="91.44mm" name="txt_rubrikBlock1" h="6.36mm">
+                     <value>
+                        <text>Vi önskar ta del av journalkopior</text>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font weight="bold" typeface="Arial" size="9pt" baselineShift="0pt">
+                        <fill>
+                           <color value="255,255,255"/>
+                        </fill>
+                     </font>
+                     <para vAlign="bottom" textIndent="0pt" spaceBelow="0pt" spaceAbove="0pt" marginRight="0pt" marginLeft="0pt"/>
+                     <margin leftInset="1mm" bottomInset="0.7mm"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <fill>
+                           <color value="0,51,102"/>
+                        </fill>
+                        <edge thickness="0.1mm"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                        <corner/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <?renderCache.bounds 256365 16044 0 0 2835 0 0 0?>
+                     <?renderCache.textRun 34 Vi önskar ta del av journalkopior 0 2835 14150 255 255 255 "Arial" 1 0 9000 ISO-8859-1?></draw>
+                  <draw w="91.44mm" name="txt_rubrikBlock1" h="6.36mm">
+                     <value>
+                        <text>(Fyll i nedanstående uppgifter och tryck på OK)</text>
+                     </value>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" size="8pt" baselineShift="0pt">
+                        <fill>
+                           <color value="255,255,255"/>
+                        </fill>
+                     </font>
+                     <para hAlign="right" vAlign="bottom" textIndent="0pt" spaceBelow="0pt" spaceAbove="0pt" marginRight="0pt" marginLeft="0pt"/>
+                     <margin rightInset="1mm" leftInset="1mm" bottomInset="0.7mm"/>
+                     <border>
+                        <edge thickness="0.1mm"/>
+                        <fill>
+                           <color value="0,51,102"/>
+                        </fill>
+                        <edge thickness="0.1mm"/>
+                        <edge presence="hidden"/>
+                        <edge thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                        <corner thickness="0.1mm"/>
+                        <corner/>
+                        <corner thickness="0.1mm"/>
+                     </border>
+                     <?renderCache.bounds 253530 16044 0 0 2835 0 0 0?>
+                     <?renderCache.textRun 49 (Fyll i nedanstående uppgifter och tryck på OK) 0 89170 14360 255 255 255 "Arial" 0 0 8000 ISO-8859-1?></draw>
+                  <subform name="sub_forsakring" layout="lr-tb" minH="9.54mm" w="182.88mm">
+                     <draw w="182.88mm" name="txt_rubrikFyllI1" h="4.24mm">
+                        <value>
+                           <text>Välj typ av ärende</text>
+                        </value>
+                        <ui>
+                           <textEdit/>
+                        </ui>
+                        <font weight="bold" baselineShift="0pt" size="7pt" typeface="Arial">
+                           <fill>
+                              <color value="0,51,102"/>
+                           </fill>
+                        </font>
+                        <para vAlign="middle" marginRight="0pt" marginLeft="0pt" textIndent="0pt" spaceBelow="0pt" spaceAbove="0pt"/>
+                        <margin topInset="0.5mm" leftInset="1mm" bottomInset="0.2mm"/>
+                        <?renderCache.bounds 515565 10035 0 0 2835 1417 0 0?>
+                        <?renderCache.textRun 20 Välj typ av ärende 0 2835 8461 0 51 102 "Arial" 1 0 7000 ISO-8859-1?></draw>
+                     <field h="5.3mm" w="36.83mm" name="rkn_val1">
+                        <ui>
+                           <checkButton size="3.175mm">
+                              <border>
+                                 <fill>
+                                    <color value="255, 255, 255"/>
+                                 </fill>
+                                 <edge thickness="0.1mm"/>
+                                 <corner thickness="0.1mm"/>
+                              </border>
+                           </checkButton>
+                        </ui>
+                        <font size="11pt" typeface="Times New Roman"/>
+                        <margin bottomInset="0mm" topInset="0mm" rightInset="1mm" leftInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <integer>0</integer>
+                        </value>
+                        <items>
+                           <integer>1</integer>
+                           <integer>0</integer>
+                           <integer>2</integer>
+                        </items>
+                        <bind match="none"/>
+                        <border>
+                           <edge presence="hidden" thickness="0.1mm"/>
+                           <corner presence="hidden" thickness="0.1mm"/>
+                        </border>
+                        <caption reserve="30.038mm" placement="right">
+                           <value>
+                              <text>Riskbedömning</text>
+                           </value>
+                           <para spaceAbove="0pt" marginLeft="0pt" vAlign="middle"/>
+                           <font size="8pt" typeface="Arial"/>
+                        </caption>
+                        <assist>
+                           <speak priority="caption"/>
+                        </assist>
+                        <event name="event__change" activity="change">
+                           <script contentType="application/x-javascript">
+if(this.rawValue == 1){
+
+	sub_textRiskbedomning.presence = "visible";
+	sub_textRiskbedomningDodsfall.presence = "hidden";
+	sub_textSjukfall.presence = "hidden";
+	sub_textOlycksfall.presence = "hidden";
+	sub_block5.sub_block5Text.sub_teleNr.presence = "hidden";
+	
+	rkn_val2.rawValue = 0;
+	rkn_val3.rawValue = 0;
+	rkn_val4.rawValue = 0;
+} else {
+
+	sub_textRiskbedomning.presence = "hidden";
+}
+</script>
+                        </event>
+                     </field>
+                     <field h="5.3mm" w="36.83mm" name="rkn_val2">
+                        <ui>
+                           <checkButton size="3.175mm">
+                              <border>
+                                 <fill>
+                                    <color value="255, 255, 255"/>
+                                 </fill>
+                                 <edge thickness="0.1mm"/>
+                                 <corner thickness="0.1mm"/>
+                              </border>
+                           </checkButton>
+                        </ui>
+                        <font size="11pt" typeface="Times New Roman"/>
+                        <margin bottomInset="0mm" topInset="0mm" rightInset="1mm" leftInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <integer>0</integer>
+                        </value>
+                        <items>
+                           <integer>1</integer>
+                           <integer>0</integer>
+                           <integer>2</integer>
+                        </items>
+                        <bind match="none"/>
+                        <border>
+                           <edge presence="hidden" thickness="0.1mm"/>
+                           <corner presence="hidden" thickness="0.1mm"/>
+                        </border>
+                        <caption reserve="30.038mm" placement="right">
+                           <value>
+                              <text>Riskbedömning dödsfall</text>
+                           </value>
+                           <para spaceAbove="0pt" marginLeft="0pt" vAlign="middle"/>
+                           <font size="8pt" typeface="Arial"/>
+                        </caption>
+                        <assist>
+                           <speak priority="caption"/>
+                        </assist>
+                        <event name="event__change" activity="change">
+                           <script contentType="application/x-javascript">
+
+if(this.rawValue == 1){
+
+	sub_textRiskbedomning.presence = "hidden";
+	sub_textRiskbedomningDodsfall.presence = "visible";
+	sub_textSjukfall.presence = "hidden";
+	sub_textOlycksfall.presence = "hidden";
+	sub_block5.sub_block5Text.sub_teleNr.presence = "hidden";
+	
+	rkn_val1.rawValue = 0;
+	rkn_val3.rawValue = 0;
+	rkn_val4.rawValue = 0;
+} else {
+
+	sub_textRiskbedomningDodsfall.presence = "hidden";
+}
+
+</script>
+                        </event>
+                     </field>
+                     <field h="5.3mm" w="36.83mm" name="rkn_val3">
+                        <ui>
+                           <checkButton size="3.175mm">
+                              <border>
+                                 <fill>
+                                    <color value="255, 255, 255"/>
+                                 </fill>
+                                 <edge thickness="0.1mm"/>
+                                 <corner thickness="0.1mm"/>
+                              </border>
+                           </checkButton>
+                        </ui>
+                        <font size="11pt" typeface="Times New Roman"/>
+                        <margin bottomInset="0mm" topInset="0mm" rightInset="1mm" leftInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <integer>0</integer>
+                        </value>
+                        <items>
+                           <integer>1</integer>
+                           <integer>0</integer>
+                           <integer>2</integer>
+                        </items>
+                        <bind match="none"/>
+                        <border>
+                           <edge presence="hidden" thickness="0.1mm"/>
+                           <corner presence="hidden" thickness="0.1mm"/>
+                        </border>
+                        <caption reserve="30.038mm" placement="right">
+                           <value>
+                              <text>Sjukfall</text>
+                           </value>
+                           <para spaceAbove="0pt" marginLeft="0pt" vAlign="middle"/>
+                           <font size="8pt" typeface="Arial"/>
+                        </caption>
+                        <assist>
+                           <speak priority="caption"/>
+                        </assist>
+                        <event name="event__change" activity="change">
+                           <script contentType="application/x-javascript">
+
+if(this.rawValue == 1){
+
+	sub_textRiskbedomning.presence = "hidden";
+	sub_textRiskbedomningDodsfall.presence = "hidden";
+	sub_textSjukfall.presence = "visible";
+	sub_textOlycksfall.presence = "hidden";
+	sub_block5.sub_block5Text.sub_teleNr.presence = "visible";
+	
+	rkn_val1.rawValue = 0;
+	rkn_val2.rawValue = 0;
+	rkn_val4.rawValue = 0;
+} else {
+
+	sub_textSjuktfall.presence = "hidden";
+}
+
+
+</script>
+                        </event>
+                     </field>
+                     <field h="5.3mm" w="36.83mm" name="rkn_val4">
+                        <ui>
+                           <checkButton size="3.175mm">
+                              <border>
+                                 <fill>
+                                    <color value="255, 255, 255"/>
+                                 </fill>
+                                 <edge thickness="0.1mm"/>
+                                 <corner thickness="0.1mm"/>
+                              </border>
+                           </checkButton>
+                        </ui>
+                        <font size="11pt" typeface="Times New Roman"/>
+                        <margin bottomInset="0mm" topInset="0mm" rightInset="1mm" leftInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <integer>0</integer>
+                        </value>
+                        <items>
+                           <integer>1</integer>
+                           <integer>0</integer>
+                           <integer>2</integer>
+                        </items>
+                        <bind match="none"/>
+                        <border>
+                           <edge presence="hidden" thickness="0.1mm"/>
+                           <corner presence="hidden" thickness="0.1mm"/>
+                        </border>
+                        <caption reserve="30.038mm" placement="right">
+                           <value>
+                              <text>Olycksfall</text>
+                           </value>
+                           <para spaceAbove="0pt" marginLeft="0pt" vAlign="middle"/>
+                           <font size="8pt" typeface="Arial"/>
+                        </caption>
+                        <assist>
+                           <speak priority="caption"/>
+                        </assist>
+                        <event name="event__change" activity="change">
+                           <script contentType="application/x-javascript">
+if(this.rawValue == 1){
+
+	sub_textRiskbedomning.presence = "hidden";
+	sub_textRiskbedomningDodsfall.presence = "hidden";
+	sub_textSjukfall.presence = "hidden";
+	sub_textOlycksfall.presence = "visible";
+	sub_block5.sub_block5Text.sub_teleNr.presence = "visible";
+	
+	rkn_val1.rawValue = 0;
+	rkn_val2.rawValue = 0;
+	rkn_val3.rawValue = 0;
+} else {
+
+	sub_textOlycksfall.presence = "hidden";
+}
+</script>
+                        </event>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="sub_knappOK1" w="182.88mm">
+                     <keep intact="contentArea"/>
+                     <margin bottomInset="1.06mm" topInset="2.12mm" leftInset="175.26mm"/>
+                     <field h="5.3mm" w="6.35mm" name="knp_okBlock1">
+                        <ui>
+                           <button highlight="inverted"/>
+                        </ui>
+                        <font typeface="Myriad Pro"/>
+                        <caption>
+                           <value>
+                              <text>OK</text>
+                           </value>
+                           <para hAlign="center" vAlign="middle"/>
+                           <font weight="bold" typeface="Arial" size="8pt"/>
+                        </caption>
+                        <border hand="right">
+                           <edge stroke="raised"/>
+                           <fill>
+                              <color value="244,242,229"/>
+                           </fill>
+                        </border>
+                        <bind match="none"/>
+                        <event name="event__click" activity="click">
+                           <script contentType="application/x-javascript">
+form1.frm_innehall.sub_block1.sub_block1FyllI.presence = "hidden";
+form1.frm_innehall.sub_block1.sub_block1Text.presence = "visible";
+</script>
+                        </event>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <border>
+                     <edge thickness="0.1mm"/>
+                     <corner thickness="0.1mm"/>
+                  </border>
+                  <keep intact="contentArea"/>
+                  <?templateDesigner expand 0?></subform>
+               <subform presence="hidden" w="182.88mm" layout="lr-tb" name="sub_block1Text">
+                  <field relevant="-print" h="6.36mm" w="182.88mm" name="knp_okBlock1">
+                     <ui>
+                        <button highlight="none"/>
+                     </ui>
+                     <font typeface="Myriad Pro"/>
+                     <caption>
+                        <value>
+                           <text>Klicka här för att skriva in uppgifter och lägga till/ta bort text</text>
+                        </value>
+                        <para marginRight="0pt" marginLeft="0pt" textIndent="0pt" spaceBelow="0pt" spaceAbove="0pt" hAlign="right" vAlign="middle"/>
+                        <font baselineShift="0pt" weight="bold" typeface="Arial" size="6pt">
+                           <fill>
+                              <color value="0,51,102"/>
+                           </fill>
+                        </font>
+                     </caption>
+                     <border hand="right">
+                        <edge presence="hidden"/>
+                     </border>
+                     <bind match="none"/>
+                     <margin rightInset="1mm"/>
+                     <event name="event__click" activity="click">
+                        <script contentType="application/x-javascript">
+form1.frm_innehall.sub_block1.sub_block1FyllI.presence = "visible";
+form1.frm_innehall.sub_block1.sub_block1Text.presence = "hidden";
+</script>
+                     </event>
+                     <traversal>
+                        <traverse ref="frm_Texten[0]"/>
+                     </traversal>
+                  </field>
+                  <traversal>
+                     <traverse ref="txt_rubrikInledning[0]" operation="first"/>
+                  </traversal>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <subform x="9.525mm" y="50.8mm" w="184.206mm" h="72.994mm" name="subform1" presence="hidden">
+            <bind match="none"/>
+            <field name="TextField1" y="15.875mm" x="19.05mm" w="165.1mm" h="34.925mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border>
+                        <edge presence="hidden"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Times New Roman" size="11pt"/>
+               <margin topInset="1mm" bottomInset="1mm" leftInset="1mm" rightInset="1mm"/>
+                <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+               </caption>
+			   <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Ovan nämnda person har behandlats hos er för bland annat FRITEXT.</p><p><br/></p><p>Försäkring är tecknad hos oss i Handelsbanken Liv och nu söker den försäkrade ersättning från oss. Med anledning av det behöver vi ta del av fullständig journalkopia för tiden DD MÅNAD ÅÅÅÅ till DD MÅNAD ÅÅÅÅ inklusive eventuella remisser/remissvar, röntgenutlåtanden och andra undersökningsresultat.</p></body>
+                  </exData>
+               </value>
+                <bind match="none"/>
+            </field>
+            <draw name="Text2" y="53.975mm" x="19.05mm" w="39.057mm" h="5.2331mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text>This is text inside subform</text>
+               </value>
+               <font typeface="Myriad Pro"/>
+               <margin topInset="0.5mm" bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm"/>
+            </draw>
+            <?templateDesigner expand 0?></subform>
+      </subform>
+      <proto/>
+      <desc>
+         <text name="version">6.5.19.20231117.148</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 124 33 0003000B000C0029002E003200350036004400450046004700480049004A004B004C004D004E004F00500051005200530055005600570058005C006E007C ()FKORSabcdefghijklmnoprstuyåö?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 88 24 0003002E00320039004400470048004C004D004E004F00510052005300550056005700580059005C006C007C KOVadeijklnoprstuvyäö?>
+      <?renderCache.subset "Myriad Pro" 0 0 ISO-8859-1 4 180 49 0001000D000F00100022002300240025002600270029002A002D002E002F003000330035003900420043004400450046004700480049004A004B004C004D004E004F0050005100530054005500560057005900AF00CA00CC00DA ,./ABCDEFHILMNORTXabcdefghijklmnoprstuvxÅäåö?>
+      <?renderCache.subset "Times New Roman" 0 0 ISO-8859-1 4 204 55 0003000F0010001100120024002700280029002B002C002E002F003000310032003500370039003B0042004400450046004700480049004A004B004C004D004E004F005000510052005300550056005700580059005A005B005C005E00600063006C006E007C ,-./ADEFHIKLMNORTVX_abcdefghijklmnoprstuvwxy{}Åäåö?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner DefaultCaptionFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Myriad Pro;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner SaveTaggedPDF 0?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 0?>
+   <?templateDesigner SavePDFWithLog 0?>
+   <?templateDesigner FormTargetVersion 36?>
+   <?templateDesigner Zoom 106?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo>
+            <embed>0</embed>
+         </fontInfo>
+         <tagged>0</tagged>
+         <version>1.7</version>
+         <adobeExtensionLevel>11</adobeExtensionLevel>
+      </pdf>
+      <common/>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+      <script>
+         <runScripts>server</runScripts>
+      </script>
+      <output/>
+   </present>
+</config>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale name="en_US" desc="English (United States)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+   <locale name="sv_SE" desc="Swedish (Sweden)">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>januari</month>
+            <month>februari</month>
+            <month>mars</month>
+            <month>april</month>
+            <month>maj</month>
+            <month>juni</month>
+            <month>juli</month>
+            <month>augusti</month>
+            <month>september</month>
+            <month>oktober</month>
+            <month>november</month>
+            <month>december</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>jan</month>
+            <month>feb</month>
+            <month>mar</month>
+            <month>apr</month>
+            <month>maj</month>
+            <month>jun</month>
+            <month>jul</month>
+            <month>aug</month>
+            <month>sep</month>
+            <month>okt</month>
+            <month>nov</month>
+            <month>dec</month>
+         </monthNames>
+         <dayNames>
+            <day>söndag</day>
+            <day>måndag</day>
+            <day>tisdag</day>
+            <day>onsdag</day>
+            <day>torsdag</day>
+            <day>fredag</day>
+            <day>lördag</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>sö</day>
+            <day>må</day>
+            <day>ti</day>
+            <day>on</day>
+            <day>to</day>
+            <day>fr</day>
+            <day>lö</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>fm</meridiem>
+            <meridiem>em</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>f.Kr.</era>
+            <era>e.Kr.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, YYYY MMMM DD</datePattern>
+         <datePattern name="long">YYYY MMMM D</datePattern>
+         <datePattern name="med">YYYY MMM D</datePattern>
+         <datePattern name="short">YYYY-MM-DD</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">'kl. 'HH.MM.SS Z</timePattern>
+         <timePattern name="long">HH.MM.SS Z</timePattern>
+         <timePattern name="med">HH.MM.SS</timePattern>
+         <timePattern name="short">HH.MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9.99 $</numberPattern>
+         <numberPattern name="percent">z,zz9 %</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping"> </numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">kr</currencySymbol>
+         <currencySymbol name="isoname">SEK</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+</xfa:datasets>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c000 79.cca54b0, 2022/11/26-09:29:55        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2026-03-03T14:42:56Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Designer 6.5</xmp:CreatorTool>
+         <pdfuaid:part>1</pdfuaid:part>
+         <pdf:Producer>Designer 6.5</pdf:Producer>
+         <xmpMM:DocumentID>uuid:33cb1a49-2d19-443c-a8cd-531e0a4b77d7</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:39fd59e1-54f5-41a4-aec8-b432837f0d92</xmpMM:InstanceID>
+         <dc:format>application/pdf</dc:format>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>6.5.19.20231117.148</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve">
+   <annots/>
+</xfdf></xdp:xdp>
